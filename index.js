@@ -9,7 +9,7 @@ let flavors = prompt("Please enter a comma separated list of Froyo flavors.");
 console.log("Entered string: ", flavors);
 
 //turn the variable into an array by splitting each item at the comma. string --> array
-let flavorsarray = flavors.split(",");
+let flavorsarray = flavors.split(/,\s*/);
 console.log("Array of user input: ", flavorsarray);
 
 //parse through the array variable and for each - add it to an object with key of the array entry and count of how many times it appears.
